@@ -8,7 +8,7 @@ const LineChartGlobal = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/src/data/data.csv");
+        const response = await fetch("src/data/data.csv");
         const csvString = await response.text();
 
         const parsedData = await new Promise((resolve, reject) => {

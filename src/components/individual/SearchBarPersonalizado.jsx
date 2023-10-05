@@ -9,7 +9,7 @@ const SearchBarPersonalizado = ({ onSearch, onCountrySelect }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/src/data/data.csv");
+        const response = await fetch("src/data/data.csv");
         const text = await response.text();
         const parsedData = Papa.parse(text, {
           header: true,

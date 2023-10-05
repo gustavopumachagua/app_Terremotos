@@ -16,7 +16,7 @@ const LineChartPersonalizado = () => {
         }
 
         // Cargar los datos desde tu archivo CSV
-        const response = await fetch("/src/data/data.csv");
+        const response = await fetch("src/data/data.csv");
         const csvString = await response.text();
 
         // Parsear los datos CSV
