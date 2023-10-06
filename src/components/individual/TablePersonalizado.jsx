@@ -13,7 +13,7 @@ const TablePersonalizado = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("src/data/data.csv");
+        const response = await fetch("public/data.csv");
         const text = await response.text();
         const parsedData = d3.csvParse(text);
 
