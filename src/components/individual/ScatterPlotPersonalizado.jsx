@@ -81,7 +81,7 @@ const ScatterPlotPersonalizado = () => {
   useEffect(() => {
     const loadData = async () => {
       try {
-        const response = await fetch("public/data.csv");
+        const response = await fetch("/data.csv");
         const csvData = await response.text();
         const parsedData = d3.csvParse(csvData, (d) => ({
           Depth: +d.Depth,

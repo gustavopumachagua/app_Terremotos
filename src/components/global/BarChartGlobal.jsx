@@ -19,7 +19,7 @@ const BarChartGlobal = () => {
       .attr("height", height);
 
     // Load data from CSV using Papaparse
-    d3.text("public/data.csv").then((data) => {
+    d3.text("/data.csv").then((data) => {
       const parsedData = Papa.parse(data, { header: true }).data;
 
       // Count and sort by frequency in descending order

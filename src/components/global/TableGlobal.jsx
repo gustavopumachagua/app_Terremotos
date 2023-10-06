@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import * as d3 from "d3";
 
-const dataUrl = "public/data.csv";
+const dataUrl = "/data.csv";
 
 const TableGlobal = () => {
   const tableRef = useRef(null);

@@ -7,7 +7,7 @@ const HistogramGlobal = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    Papa.parse("public/data.csv", {
+    Papa.parse("/data.csv", {
       header: true,
       download: true,
       skipEmptyLines: true,

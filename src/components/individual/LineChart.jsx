@@ -16,7 +16,7 @@ const LineChart = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("public/data.csv");
+        const response = await fetch("/data.csv");
         const csvString = await response.text();
 
         const parsedData = await new Promise((resolve, reject) => {

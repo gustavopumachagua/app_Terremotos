@@ -18,7 +18,7 @@ const ScatterPlotGlobal = () => {
 
     const loadData = async () => {
       try {
-        const data = await d3.csv("public/data.csv");
+        const data = await d3.csv("/data.csv");
         return data.map((d) => ({
           Depth: +d.Depth,
           Mag: +d.Mag,

@@ -13,7 +13,7 @@ const HistogramPersonalizado = () => {
   };
 
   useEffect(() => {
-    Papa.parse("public/data.csv", {
+    Papa.parse("/data.csv", {
       header: true,
       download: true,
       skipEmptyLines: true,

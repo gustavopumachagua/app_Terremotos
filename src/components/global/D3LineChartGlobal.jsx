@@ -9,7 +9,7 @@ const D3LineChartGlobal = () => {
     const fetchData = async () => {
       try {
         // Cargar los datos desde tu archivo CSV
-        const response = await fetch("public/data.csv");
+        const response = await fetch("/data.csv");
         const csvString = await response.text();
 
         // Parsear los datos CSV
